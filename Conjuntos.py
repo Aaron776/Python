@@ -26,3 +26,7 @@ print(conjunto3)
 conjunto4=set()
 conjunto4={1.3,2,"Jose"}
 print(2 in conjunto4)
+
+#Para tranformar una lista a un conjunto usamos el metodo set()
+lista=[1,2,"Dagmar"]
+print(set(lista))
