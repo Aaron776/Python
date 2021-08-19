@@ -17,7 +17,7 @@ palabra1="Raul esta grande"
 lista2=palabra1.split()
 print(lista2)
 
-#5) replace()	Reemplaza una cadena o una apalabra por otra
+#5) replace()	Reemplaza una cadena o una palabra por otra
 palabra2="Aaron era mi amigo"
 print (palabra2.replace('mi','nuestro')) #en el paretesis del replace ponemos primero la palabara la queremos reemplazar y luego con una
 #coma alado ponemos la palabra que queremos que reemplazca
