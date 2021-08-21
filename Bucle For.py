@@ -22,3 +22,12 @@ for i in nombre:
 for i in range(10):
     print("Barcelona")
 
+
+#Bucle for para imprimir letra por letra de una palabra o un string
+for letra in "Academia":
+    print(letra)
+
+#Hay que entender que luego de la palabra for ponemos una variable que contendra la cantidad de iteraciones que tiene ese arreglo y que valor tiene esa iteracion
+dias=["Lunes","Martes","Miercoles"]
+for i in dias:
+    print(i)
