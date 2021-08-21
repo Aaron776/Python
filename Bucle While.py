@@ -1,3 +1,5 @@
+#Un bucle while nos permite ejecutar una accion repetidas veces mientras una condicion no se cumpla
+
 import  math
 #Este import sirve para acceder a las funciones matematicas
 numero=int(input("Digite un numero:"))

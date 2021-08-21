@@ -6,7 +6,7 @@ print(lista)
 print(lista[2])
 
 #Python nos permite recorrer un eelento de la lista de atras hacia adelante y viceversa, si ponemos en negativo quiere decir que recorre desde el ultimo elemento hasta el principio
-print(lista[-3])
+print(lista[-1])
 
 #Podemos trabajr con sublistas tambien o con rangos(desde un elemento hasta otro)
 print(lista[0:4])

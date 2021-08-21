@@ -25,7 +25,7 @@ for i in range(1, numero+1, 2):
 
 #Escribir un programa que permita al usuario ingresar una cantidad de numeros que el quiera y luego le muestre la suma
 #la suma de todos esos numeros
-cantidad=int(input("cauntos numeros quiere ingresar: "))
+cantidad=int(input("Cuantos numeros quiere ingresar: "))
 i=0
 acum=0
 while i<cantidad:
@@ -51,7 +51,18 @@ print("La cantidad de pares son: ",acum_pares)
 print("La suma de los impares es: ",acum_impares)
 
 
+#Encontrar el menor elemento y el mayor de una lista determinada por el usuario
 
+cantidad=int(input("Digite la cantidad de valores que tendra la lista:"))
+lista=[]
+for x in range(cantidad):
+    valor=int(input("Ingrese el valor: "))
+    lista.append(valor)
+
+#imprimimos la lista
+print(lista)
+print("El elemento mayor de la lista es: ",max(lista))
+print("El elemento menor de la lista es: ",min(lista))
 
 
 
