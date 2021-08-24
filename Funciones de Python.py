@@ -49,12 +49,13 @@ print (min(x2))
 
 
 #4) sum()	Suma el total de una lista de números
-x3=[1,2,1]
-print(sum(x3))
+ejemplo=[1,2,1]
+print(sum(ejemplo))
 
 #5) round()	Redondea después de la coma de un decimal
 numero=5.6
 print(round(numero))
+
 #6) type()	Devuelve el tipo de valor(si es int, float, string) de un elemento
 tipo=22
 print(type(tipo))
