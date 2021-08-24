@@ -3,12 +3,12 @@
 # pero solo si esta en la misma carpeta de python, si es otro archivo debemos poner la ruta
 
 
-estudiante=open("Estudiantes.txt","w")
+estudiante=open("Estudiantes.txt","r+")
 
 #Para leer archivos usamos la funcion readable() para saber si podemos o no leer y luego usamos  read() para ahora si poder leer el archivo
 print(estudiante.readable()) # antes de esto se debe poner dentro del open el modo r o r+ caso contrario no se puede hacer
 
-print(estudiante.read())
+
 
 print(estudiante.readline()) #esta funcion readline() lo que hace es devolvernos la primera linea del archivo de texto
 
