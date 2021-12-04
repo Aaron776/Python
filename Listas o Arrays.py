@@ -15,3 +15,5 @@ print(lista[1:4])
 #Listas dentro una lista
 lista2=[1,2,3,4,[4.1,4.3,4.2],5]
 print(lista2)
+
+

@@ -1,17 +1,21 @@
-equipo={23:"Paula Dybala",11:"Douglas Costa",7:"Cristiano Ronaldo",9:"Alvaro Morata"}
+equipo={23:"Paula Dybala",11:"Douglas Costa",7:"Cristiano Ronaldo",9:"Alvaro Morata",1:"Alex Sandro",13:"Andrea Pirlo"}
+
+#Imprimir todo el Diccionario
 print(equipo)
+
+#Mostrar un elemento del diccionario mediante su llave
 print(equipo[23])
 
 #Usando el metodo get() en un diccionario lo que nos permite es imprimir un mensaje cuando busquemos un elemento que no existe en el diccionario
 print(equipo.get(10,"No existe este jugador en este diccionario"))
 
-#Buscar en nuestro diccionario con el metodo in y te devuelve un true o un false
+#Buscar en nuestro diccionario un elemento con el metodo in y te devuelve un true o un false
 print(10 in equipo)
 
 #Mostrar solo las claves del diciconario con el metodo keys()
 print(equipo.keys())
 
-#Mostrar solo los nombres de lo elemento del diciconario con el metodo values()
+#Mostrar solo los valores de lo elemento del diccionario con el metodo values()
 print(equipo.values())
 
 #Mostrar la clave y el nombre del elemento con el metodo items() (el metodo items se usa para recorrer diccionarios)
