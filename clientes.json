@@ -1,0 +1,20 @@
+{
+    "clientes": [
+        {
+            "Nombre": "Sigrid",
+            "Apellido": "Mannock",
+            "Edad": 27
+        },
+        {
+            "Nombre": "Joe",
+            "Apellido": "Hinners",
+            "Edad": 31
+        },
+        {
+            "first_name": "Theodoric",
+            "last_name": "Rivers",
+            "age": 36,
+            "amount": 1.11
+        }
+    ]
+}
