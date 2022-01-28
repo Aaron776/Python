@@ -5,12 +5,12 @@ try:
     conexionPG = psycopg2.connect(
         host="localhost",
         user="postgres",
-        password="1725159683Aron", # esta es la calve de min postgres
+        password="1725159683Aron", # esta es la calve de mi postgres
         database="Universidad"
     )
     print("Conexion exitosa")
 
-    # Aqui solamente estoy obteniendo la vertsion de mi postgres
+    # Aqui solamente estoy obteniendo la version de mi postgres
     cursor=conexionPG.cursor()
     cursor.execute("SELECT version()")
     fila=cursor.fetchone()
@@ -23,6 +23,15 @@ try:
     for item in registros:     #para imprimir los registro de una tabla usamo un for in
         print(item)
 
+    # Insertar datos o registros a la base de datos
+    cursor = conexionPG.cursor()
+    codigo = int(input("Ingresar codigo del alumno: "))
+    cedula = input("Ingresar cedula: ")
+    nombres = input("Ingresar nombres: ")
+    apellidos = input("Ingresar apellidos: ")
+    cursor.execute("INSERT INTO alumnos (codigo,cedula,nombres,apellidos) VALUES(%s,%s,%s,%s)")
+    conexionPG.commit()
+    print("Registro de datos exitoso")
 
 except:
     print ("Error en la conexion")

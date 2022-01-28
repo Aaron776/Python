@@ -5,15 +5,10 @@ def saludar():
     print("Hola usuario")  #todo el codigo de la funcion debe estar identado para que lo reconozca que forma parte de esa funcion
 
 
-#Para usar la funcion simplemente se la debe llamar de la siguiente forma: poenmos el nombre de la funicon con los dos parentesis
-saludar()
-
 #Los parametros son los datos o variables que les enviamos a esa funcion y van entre los parentesis
 def saludo_usuario(nombre,edad):
     print("Hola usuario",nombre,"mucho gusto tienes",edad)
 
-
-saludo_usuario("Aaron",23)
 
 
 #Ejemplo de Funciones
@@ -25,7 +20,9 @@ def mayorNumero(n1,n2,n3):
     else:
         return n3
 
-
+#Para usar la funcion simplemente se la debe llamar de la siguiente forma: poenmos el nombre de la funicon con los dos parentesis, en caso de tener argumentos la funcion cuando la llamemos en los parentesis debemos poner los datos que pide la funcion
+saludar()
+saludo_usuario("Aaron",23)
 print(mayorNumero(4.2,5.6,5.7))
 
 

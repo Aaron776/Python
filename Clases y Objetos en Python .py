@@ -10,7 +10,7 @@ class Estudiante:
     apellido=""
     ci=""
 
-    def __init__(self,ci,nombre,apellido,celular): #aqui creamos un constructor para inicializar la clase solo si queremos
+    def __init__(self,ci,nombre,apellido,celular): #aqui creamos un constructor para inicializar la clase solo si queremos ya que es opcional
         self.ci = ci
         self.nombre = nombre
         self.apellido = apellido
@@ -19,7 +19,7 @@ class Estudiante:
     #Metodos o Funciones de la Clase
     def saludar(self): # cuando creamos una funcion en una clase debemos poner la palabra self en los parentesis para especificar que vamos a trabajr con los atributos de esa clase
         print("Hola Mundo")
-        print("Hola como estas:", self.nombre)
+        print("Hola como estas: ", self.nombre)
 
 #Para crear un objeto de esa clase creada lo hacemos de la siguiente manera: ponemos el nombre de nuestro objeto y le igualamos a la clase que creamos
 estudiante1=Estudiante(1725159683,"Aaron","Ortiz","0984588833")
