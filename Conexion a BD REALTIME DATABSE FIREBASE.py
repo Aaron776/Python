@@ -2,7 +2,7 @@ from firebase import firebase
 def conexioFB():
 
        #Conexion a Firebase
-       database=firebase.FirebaseApplication("https://aplicacion-a6a11-default-rtdb.firebaseio.com/",None)
+       database=firebase.FirebaseApplication("https://aplicacion-a6a11-default-rtdb.firebaseio.com/")
 
        # Ingreso de datos a la Coleccion
        registros=[{'ci':'1725159683','nombre':'Aaron','apellido':'Ortiz','edad':25},
@@ -12,7 +12,7 @@ def conexioFB():
        resultado=database.post("Usuarios",registros)
 
        # Mostrar Registros de la Coleccion
-       mostrar=database.get("Usuarios",'')
+       mostrar=database.get("Usuarios","")
        print (mostrar)
 
 conexioFB()

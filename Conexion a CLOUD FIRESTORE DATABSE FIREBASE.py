@@ -13,10 +13,14 @@ def conexion():
 
     db = backend
     usuarios= 'mHNBy9lJ2WiLH0HZpMjF'
-    doc_ref = db.collection(u'usuarios').document(usuarios) #aqui llamo a mi coleccion mediante su id y su nombre
-    doc = doc_ref.get()
+    coleccion = db.collection(u'usuarios').document(usuarios) #aqui llamo a mi coleccion mediante su id y su nombre
+    registros = coleccion.get()
 
-    for i in doc.to_dict():
-        print(doc.to_dict()[i])
+
+    for item in registros.to_dict(): # aqui imprimo mis registros usando el metodo dic para tranfromar a diccionario
+        print(registros.to_dict()[item])
+
+    for i in registros.to_dict()["Nombre"]:
+        print(i)
 
 conexion()
