@@ -29,7 +29,9 @@ try:
     cedula = input("Ingresar cedula: ")
     nombres = input("Ingresar nombres: ")
     apellidos = input("Ingresar apellidos: ")
-    cursor.execute("INSERT INTO alumnos (codigo,cedula,nombres,apellidos) VALUES(%s,%s,%s,%s)")
+    telefono = input("Ingresar telefono: ")
+    sentencia="INSERT INTO alumnos (codigo,cedula,nombres,apellidos) VALUES({0},'{1}','{2}','{3}','{4}')".format(codigo,cedula,nombres,apellidos,telefono)
+    cursor.execute(sentencia)
     conexionPG.commit()
     print("Registro de datos exitoso")
 

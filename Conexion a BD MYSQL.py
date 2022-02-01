@@ -20,10 +20,11 @@ try:
 
         # Insertar datos o registros a la base de datos
     cursor = conexionSQ.cursor()
-    id_alumno = int(input("Ingresar id del alumno: "))
-    nombre = input("Ingresar nombre: ")
-    apellido = input("Ingresar apellido: ")
-    cursor.execute("INSERT INTO alumnos (id_alumno,nombre,apellido) VALUES(id_alumno,'nombre','apellido')")
+    id=int(input("Ingrese id del alumno: "))
+    nombre = input("Ingrese Nombre del alumno: ")
+    apellido = input("Ingrese Apellido del alumno: ")
+    insertar="INSERT INTO alumnos (id_alumno,nombre,apellido) VALUES({0},'{1}','{2}')".format(id,nombre,apellido)
+    cursor.execute(insertar)
     conexionSQ.commit()
     print("Registro de datos exitoso")
 except:
